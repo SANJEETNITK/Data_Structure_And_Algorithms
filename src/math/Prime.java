@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class Prime {
 
+    /**
+     * Basic method to check if a number is prime or not
+     */
     public boolean isPrimeBasic(int n) {
         if (n < 2) return false;
         for (int i = 2; i < n; i++) {
@@ -14,6 +17,9 @@ public class Prime {
         return true;
     }
 
+    /**
+     * Enhanced basic method to check if number is prime or not
+     */
     public boolean isPrimeBasicEnhanced(int n) {
         if (n < 2) return false;
         for (int i = 2; i * i <= n; i++) {
@@ -24,6 +30,9 @@ public class Prime {
         return true;
     }
 
+    /**
+     * fastest way to check if a number is prime
+     */
     public boolean isPrimeFastest(int n) {
         if (n < 2) return false;
         if (n <= 3) return true;
@@ -38,6 +47,9 @@ public class Prime {
         return true;
     }
 
+    /**
+     * generates a boolean array of n numbers and marks each index as true if index is prime
+     */
     public boolean[] sieveOfEratosthenes(int n) {
 
         boolean prime[] = new boolean[n + 1];
